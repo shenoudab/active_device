@@ -1,0 +1,36 @@
+ActiveDevice : Open Mobile Device Detector
+============
+
+Mobile and Devices User Agent Detector, For Mobile Handsets, Devices and Desktop Browsers.
+For Detect the Mobile and Recognize its Brand, Model, Engine, OS and Browser.
+
+Usage
+=======
+
+Add this one line to your Application controller.
+
+    class ApplicationController < ActionController::Base
+      include ActiveDevice
+    end
+
+Once this is in place, any request that comes from a mobile device will be be
+set as :mobile format.  It is up to you to determine how you want to handle
+these requests.  It is also up to you to create the .mobile.erb versions of
+your views that are to be requested.
+
+Then add the line below to config/initializers/mime_types.rb
+
+  Mime::Type.register_alias "text/html", :mobile
+
+For Skiping setting the Format to :mobile
+Add this line to your Application Controller
+
+  skip_before_filter :set_mobile_format
+
+
+Example
+=======
+
+More will Coming Soon, Wait for MobiThought
+
+Copyright (c) 2009 Shenouda Bertel, MobiThought, released under the MIT license

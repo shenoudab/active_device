@@ -1,6 +1,8 @@
+require 'rubygems'
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
+require 'rake/gempackagetask'
 
 desc 'Default: run unit tests.'
 task :default => :test
@@ -24,16 +26,19 @@ end
 
 PKG_FILES = FileList[ '[a-zA-Z]*', 'generators/**/*', 'lib/**/*', 'rails/**/*', 'tasks/**/*', 'test/**/*' ]
 
-spec = Gem::Specification.new do |s|
-  s.name = "yaffle"
-  s.version = "0.0.1"
-  s.author = "Gleeful Yaffler"
-  s.email = "yaffle@example.com"
-  s.homepage = "http://yafflers.example.com/"
-  s.platform = Gem::Platform::RUBY
-  s.summary = "Sharing Yaffle Goodness"
+spec = Gem::Specification.new do |s| 
+  s.name = "active_device"
+  s.version = "1.0.0"
+  s.authors = ["Shenouda Bertel"]
+  s.description = "Device UserAgent Detector"
+  s.email = "sbertel@mobithought.com"
+  s.homepage = "http://mobithought.com/"
   s.files = PKG_FILES.to_a
-  s.require_path = "lib"
+  s.require_paths = ["lib"]
+  s.rubyforge_project = "active_device"
+  s.rubygems_version = "1.3.5"
+  s.summary = "Mobile Device Detector"
+  s.platform = Gem::Platform::RUBY 
   s.has_rdoc = false
   s.extra_rdoc_files = ["README"]
 end

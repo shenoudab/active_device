@@ -4,18 +4,6 @@ ActiveDevice : Open Mobile Device Detector
 Mobile and Devices User Agent Detector, For Mobile Handsets, Devices and Desktop Browsers.
 For Detect the Mobile and Recognize its Brand, Model, Engine, OS and Browser.
 
-Installation
-============
-
-Install the gem from gemcutter:
-
-  sudo gem install active_device
-
-You can also install this as a plugin:
-
-  script/plugin install git://github.com/shenoudab/active_device.git
-
-
 Usage
 =======
 

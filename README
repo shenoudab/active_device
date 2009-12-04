@@ -58,7 +58,6 @@ Examples from ActiveDevice Helper Methods.
     agent_engine : Reurn the Useragnet Engine.
     agent_os : Return Useragent Device OS.
 
-
 More will Coming Soon, Wait for MobiThought
 
 Copyright (c) 2009 Shenouda Bertel, MobiThought, released under the MIT license

@@ -29,6 +29,7 @@ class Engine
     when /Darwin/i    ; :Darwin
     when /NetFront/i  ; :NetFront
     when /UP.Browser/i; :'UP.Browser'
+    when /Palm/i      ; :Palm
     else                :Unknown
     end
   end

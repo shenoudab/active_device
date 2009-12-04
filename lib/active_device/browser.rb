@@ -1,6 +1,3 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
 class Browser
   ##
   # User agent string.
@@ -19,21 +16,52 @@ class Browser
 
   def self.name user_agent
     case user_agent
+    when /avant/i                ; :Avant
     when /Konqueror/i            ; :Konqueror
-    when /Safari/i               ; :Safari
-    when /MSIE/i                 ; :IE
-    when /Chrome/i               ; :Chrome
+    when /Safari/i               ; :Safari #Common
+    when /MSIE/i                 ; :IE #Common
+    when /Chrome/i               ; :Chrome #Common
     when /Android/i              ; :Android
-    when /Opera Mini/i           ; :'Opera Mini'
-    when /Opera Mobi/i           ; :'Opera Mobile'
-    when /Opera/i                ; :Opera
+    when /Opera Mini/i           ; :'Opera Mini' #Embedded Mobile Based
+    when /Opera Mobi/i           ; :'Opera Mobile' #Embedded Mobile Based
+    when /Opera/i                ; :Opera #Common
     when /playstation 3/i        ; :PS3
     when /playstation portable/i ; :PSP
-    when /SymbianOS/i            ; :SymbianOS
-    when /Symbian/i              ; :Symbian
-    when /iPhone/i               ; :iPhone
-    when /Firefox/i              ; :Firefox
-    when /Mozilla/i              ; :Mozilla
+    when /Palm/i                 ; :Palm
+    when /SymbianOS/i            ; :SymbianOS #Embedded Mobile Based
+    when /Symbian/i              ; :Symbian #Embedded Mobile Based
+    when /iPhone/i               ; :iPhone #Embedded Mobile Based
+    when /Firefox/i              ; :Firefox #Common
+    when /Netscape/i             ; :Netscape
+    when /seamonkey/i            ; :Seamonkey
+    when /k-meleon/i             ; :'K-Meleon'
+    when /Winwap/i               ; :Winwap #Embedded Mobile Based
+    when /WapTiger/i             ; :WapTiger #Embedded Mobile Based
+    when /DOCOMO/i               ; :DOCOMO  #Embedded Mobile Based
+    when /elinks/i               ; :ELinks #Text Based
+    when /Lynx/i                 ; :Lynx #Text Based
+    when /retawq/i               ; :w3m #Text Based
+    when /advanced/i             ; :Advanced
+    when /amaya/i                ; :Amaya
+    when /amiga/i                ; :Amiga
+    when /aplix/i                ; :Aplix
+    when /cyberdog/i             ; :Cyberdog
+    when /dillo/i                ; :Dillo
+    when /galaxy/i               ; :Galaxy
+    when /genius/i               ; :Genius
+    when /hotjava/i              ; :hotjava
+    when /ibm/i                  ; :IBM
+    when /ibrowse/i              ; :iBrowse
+    when /icab/i                 ; :iCab
+    when /ice/i                  ; :ICE
+    when /klondike/i             ; :Klondike
+    when /ncsa/i                 ; :NCSE
+    when /netsurf/i              ; :NetSurf
+    when /openwave/i             ; :OpenWave
+    when /reqwirelessweb/i       ; :Reqwirelessweb
+    when /sunrise/i              ; :sunrise
+    when /worldwideweb/i         ; :worldwideweb
+    when /Mozilla/i              ; :Mozilla #Common
     else                         ; :Unknown
     end
   end

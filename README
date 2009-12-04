@@ -39,9 +39,25 @@ Add this line to your Application Controller
 
   skip_before_filter :set_mobile_format
 
-
 Example
 =======
+
+Examples from ActiveDevice Helper Methods.
+
+    is_mobile_device? : Checking if the Request from Mobile Device
+    is_mobile_browser?
+    is_bot?
+
+    is_device? 'iphone'
+    is_brand? 'Nokia'
+    is_model? 'NokiaE72'
+
+    device_model : Return the Device Model if Mobile.
+    device_brand : Return the Device Brand if Mobile.
+
+    agent_engine : Reurn the Useragnet Engine.
+    agent_os : Return Useragent Device OS.
+
 
 More will Coming Soon, Wait for MobiThought
 

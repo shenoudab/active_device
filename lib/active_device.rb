@@ -84,50 +84,50 @@ module ActiveDevice
     Bot.is_bot? request.user_agent
   end
 
-  # Can check for a specific user agent
+  # Can check for a specific type
   # e.g., is_device?('iphone') or is_device?('mobileexplorer')
 
   def is_device? type
     request.user_agent.to_s.downcase.include?(type.to_s.downcase)
   end
 
-  # Can check for a specific user agent
-  # e.g., is_device?('iphone') or is_device?('mobileexplorer')
+  # Can check for a specific type
+  # e.g., is_handset?('iphone') or is_handset?('mobileexplorer')
 
   def is_handset? type
     Handset.is_handset? request.user_agent, type
   end
 
-  # Can check for a specific user agent
-  # e.g., is_device?('iphone') or is_device?('mobileexplorer')
+  # Can check for a specific brand
+  # e.g., is_brand?('Nokia') or is_brand?('HTC')
 
   def is_brand? brand
     Handset.is_brand? request.user_agent, brand
   end
 
-  # Can check for a specific user agent
-  # e.g., is_device?('iphone') or is_device?('mobileexplorer')
+  # Can check for a specific Mobile Model
+  # e.g., is_model?('NokiaE72') or is_model?('Nokia6630')
 
   def is_model? model
     Handset.is_model? request.user_agent, model
   end
 
-  # Can check for a specific user agent
-  # e.g., is_device?('iphone') or is_device?('mobileexplorer')
+  # Can check for a specific OS
+  # e.g., is_os?('SymbianOS') or is_os?('Linux')
 
   def is_os? os
     Os.is_os? request.user_agent, os
   end
 
-  # Can check for a specific user agent
-  # e.g., is_device?('iphone') or is_device?('mobileexplorer')
+  # Can check for a specific Engine
+  # e.g., is_engine?('Webkit') or is_engine?('Chrome')
 
   def is_engine? engine
     Engine.is_engine? request.user_agent, engine
   end
 
   # Can check for a specific user agent
-  # e.g., is_device?('iphone') or is_device?('mobileexplorer')
+  # e.g., is_browser?('Firefox') or is_browser?('Chrome')
 
   def is_browser? browser
     Browser.is_browser? request.user_agent, browser

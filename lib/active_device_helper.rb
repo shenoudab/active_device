@@ -86,21 +86,21 @@ module ActiveDevice
     ##
     # User agent model symbol.
 
-    def model
+    def device_model
       Model.brand_model request.user_agent
     end
 
     ##
     # User agent model Reselution symbol.
 
-    def model_reselution
+    def device_model_reselution
       Model.model_reselution request.user_agent
     end
 
     ##
     # User agent brand symbol.
 
-    def brand
+    def device_brand
       Brand.mobile_brand request.user_agent
     end
     

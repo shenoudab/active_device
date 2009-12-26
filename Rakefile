@@ -28,7 +28,7 @@ PKG_FILES = FileList[ '[a-zA-Z]*', 'generators/**/*', 'lib/**/*', 'rails/**/*', 
 
 spec = Gem::Specification.new do |s| 
   s.name = "active_device"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
   s.authors = ["Shenouda Bertel"]
   s.description = "Device UserAgent Detector"
   s.email = "sbertel@mobithought.com"

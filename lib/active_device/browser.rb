@@ -74,6 +74,7 @@ class Browser
     when /IceCat/i               ; :IceCat
     when /Iceweasel/i            ; :Iceweasel
     when /iNet/i                 ; :iNet
+    when /iPad/i                 ; :iPad
     when /iPhone/i               ; :iPhone #Embedded Mobile Based
     when /Iron/i                 ; :Iron
     when /Java/i                 ; :Java # Library

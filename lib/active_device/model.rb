@@ -13,12 +13,15 @@ class Model
 
   def self.brand_model user_agent
     case user_agent
+    when /iPad/i                        ; :iPad
     when /iPhone/i                      ; :iPhone
     when /SAMSUNG[\w\-\.\_\ ]*/i        ; samsung_models user_agent
     when /Nokia[\w\.\_\ ]*/i            ; nokia_models user_agent
     when /HTC[\w\-\.\_\ ]*/i            ; htc_models user_agent
     when /SonyEricsson[\w\-\.\_\ ]*/i   ; sonyericsson_models user_agent
-    when /^Mozilla[0-9\-\.\_\ ]*/i      ; :'Unknown Yet'
+    when /Opera Mini/i                  ; :'Opera Mini'
+    when /Opera Mobi/i                  ; :'Opera Mobile'
+    when /^Mozilla[0-9\-\.\_\ ]*/i      ; :Unknown
     else                                ; :"#{user_agent[/[\w\-\.\_]*/i]}"
     end
   end
@@ -79,7 +82,7 @@ class Model
 
   def self.model_reselution user_agent
     case user_agent
-    when /([0-9]+x+[0-9]*)/i                      ; :"#{user_agent[/([0-9]+x+[0-9]*)/i]}"
+    when /([0-9]+x+[0-9]*)/i            ; :"#{user_agent[/([0-9]+x+[0-9]*)/i]}"
     else                                ; :'Not Recognized'
     end
   end

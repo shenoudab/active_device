@@ -22,6 +22,7 @@ class Brand
     when /HTC/i                ; :HTC
     when /iPhone/i             ; :Apple
     when /iTouch/i             ; :Apple
+    when /iPad/i               ; :Apple
     when /iPod/i               ; :Apple
       ## ==================================== ##
     when /Acer/i               ; :Acer
@@ -44,7 +45,7 @@ class Brand
     when /Benefon/i            ; :Benefon
     when /BenQ/i               ; :BenQ
     when /BenQ-Siemens/i       ; :'BenQ-Siemens'
-    #when /Bird/                ; :Bird
+      #when /Bird/                ; :Bird
     when /Bleu/i               ; :Bleu
     when /BlackBerry/i         ; :BlackBerry
     when /Capitel/i            ; :Capitel
@@ -128,7 +129,7 @@ class Brand
     when /LG/i                 ; :LG
     when /Lobster/i            ; :Lobster
     when /Longcos/i            ; :Longcos
-    #when /LT/                  ; :LT
+      #when /LT/                  ; :LT
     when /LXE/i                ; :LXE
     when /Malata/i             ; :Malata
     when /Maxon/i              ; :Maxon
@@ -152,13 +153,15 @@ class Brand
     when /Neonode/i            ; :Neonode
     when /Newgen/i             ; :Newgen
     when /Nexian/i             ; :Nexian
-    #when /Nintendo/i           ; :Nintendo
+      #when /Nintendo/i           ; :Nintendo
     when /Nokia/i              ; :Nokia
     when /NTT DoCoMo/i         ; :'NTT DoCoMo'
     when /O2/                  ; :O2
     when /OKWap/i              ; :OKWap
     when /Onda/i               ; :Onda
-    #when /Opera/i              ; :Opera
+    when /Opera Mini/i         ; :Opera
+    when /Opera Mobi/i         ; :Opera
+      #when /Opera/i              ; :Opera
     when /Optimay/i            ; :Optimay
     when /Orange/i             ; :Orange
     when /PalmOne/i            ; :PalmOne

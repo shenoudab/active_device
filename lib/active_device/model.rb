@@ -21,6 +21,8 @@ class Model
     when /SonyEricsson[\w\-\.\_\ ]*/i   ; sonyericsson_models user_agent
     when /Opera Mini/i                  ; :'Opera Mini'
     when /Opera Mobi/i                  ; :'Opera Mobile'
+    when /Palm/i                        ; palm_models user_agent
+    when /webOS/i                       ; palm_models user_agent
     when /^Mozilla[0-9\-\.\_\ ]*/i      ; :Unknown
     else                                ; :"#{user_agent[/[\w\-\.\_]*/i]}"
     end
@@ -64,6 +66,25 @@ class Model
       model = user_agent[/Samsung[\w\.\_\-]*/i]
     else
       model = user_agent[/Samsung[\w\.\_\-]*/i]
+    end
+    model_clear model
+  end
+
+  def self.palm_models user_agent
+    if user_agent =~ /webOS[\w\.\_\-]*/i
+      if user_agent[/Pre[\w\.\_\-]*/i]
+        model = :'Palm Pre'
+      elsif user_agent[/Pixi[\w\.\_\-]*/i]
+        model = :'Palm Pixi'
+      else 
+        model = user_agent[/[\w\.\_\-]*/i]
+      end
+    elsif user_agent =~ /PalmOS[\w\.\_\-]*/i
+      model = user_agent[/Palm[\.\_\-][\w]*/i]
+    elsif user_agent =~ /PalmSource[\w\.\_\-]*/i
+      model = user_agent[/Palm[\.\_\-][\w]*/i]
+    else
+      model = user_agent[/Palm[\w\.\_\-]*/i]
     end
     model_clear model
   end

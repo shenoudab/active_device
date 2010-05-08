@@ -158,6 +158,7 @@ class Browser
     when /WDG_Validator/i        ; :WDG_Validator # Validator
     when /Web Downloader/i       ; :'Web Downloader' # Offline Browser
     when /WebCopier/i            ; :WebCopier # Offline Browser
+    when /webOS/i                ; :Palm
     when /WebZIP/i               ; :WebZIP # Offline Browser
     when /Wget/i                 ; :Wget # Offline Browser
     when /Winwap/i               ; :Winwap #Embedded Mobile Based

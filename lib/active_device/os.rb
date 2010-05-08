@@ -32,6 +32,8 @@ class Os
     when /SymbianOS/i            ; :SymbianOS
     when /Symbian/i              ; :Symbian
     when /Palm/i                 ; :Palm
+    when /PalmOS/i               ; :PalmOS
+    when /webOS/i                ; :webOS
     when /iPhone/i               ; :iPhone
     else                         ; :Unknown
     end

@@ -228,6 +228,7 @@ class Brand
     when /Vodafone/i           ; :Vodafone
     when /Voxtel/i             ; :Voxtel
     when /W3C/i                ; :W3C
+    when /webOS/i              ; :Palm
     when /WellcoM/i            ; :WellcoM
     when /Wonu/i               ; :Wonu
     when /XDA/i                ; :XDA

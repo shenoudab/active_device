@@ -16,6 +16,7 @@ class Os
 
   def self.os user_agent
     case user_agent
+    when /Android/i              ; :Android
     when /windows ce/i           ; :'Windows CE'
     when /windows nt 6\.0/i      ; :'Windows Vista'
     when /windows nt 6\.\d+/i    ; :'Windows 7'

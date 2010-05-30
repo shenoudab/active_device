@@ -23,6 +23,8 @@ class Model
     when /Opera Mobi/i                  ; :'Opera Mobile'
     when /Palm/i                        ; palm_models user_agent
     when /webOS/i                       ; palm_models user_agent
+    when /T-Mobile G1/i                 ; :'T-Mobile G1'
+    when /Dream/i                       ; :'Dream'
     when /^Mozilla[0-9\-\.\_\ ]*/i      ; :Unknown
     else                                ; :"#{user_agent[/[\w\-\.\_]*/i]}"
     end

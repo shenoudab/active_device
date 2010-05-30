@@ -33,7 +33,6 @@ class Brand
     when /Alphacell/i          ; :Alphacell
     when /Amazon/i             ; :Amazon
     when /Amoi/i               ; :Amoi
-    when /Android/i            ; :Android
     when /AnexTek/i            ; :AnexTek
     when /Arcelik/i            ; :Arcelik
     when /ASMOBILE/i           ; :ASMOBILE
@@ -235,6 +234,7 @@ class Brand
     when /YAS/i                ; :YAS
     when /ZT/i                 ; :ZT
     when /ZTE/i                ; :ZTE
+    when /Android/i            ; :Android
     else                       ; :UnknownMobile
     end
   end

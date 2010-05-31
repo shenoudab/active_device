@@ -18,18 +18,19 @@ class Engine
 
   def self.engine user_agent
     case user_agent
-    when /Webkit/i    ; :Webkit
-    when /Khtml/i     ; :khtml
-    when /Konqueror/i ; :Konqueror
-    when /Presto/i    ; :Presto
-    when /Trident/i   ; :Trident
-    when /Gecko/i     ; :Gecko
-    when /MSIE/i      ; :MSIE
-    when /Chrome/i    ; :Chrome
-    when /Darwin/i    ; :Darwin
-    when /NetFront/i  ; :NetFront
-    when /UP.Browser/i; :'UP.Browser'
-    when /Palm/i      ; :Palm
+    when /AppleWebKit/i ; :AppleWebKit
+    when /Webkit/i      ; :Webkit
+    when /Khtml/i       ; :khtml
+    when /Konqueror/i   ; :Konqueror
+    when /Presto/i      ; :Presto
+    when /Trident/i     ; :Trident
+    when /Gecko/i       ; :Gecko
+    when /MSIE/i        ; :MSIE
+    when /Chrome/i      ; :Chrome
+    when /Darwin/i      ; :Darwin
+    when /NetFront/i    ; :NetFront
+    when /UP.Browser/i  ; :'UP.Browser'
+    when /Palm/i        ; :Palm
     else                :Unknown
     end
   end

@@ -23,27 +23,3 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
-
-PKG_FILES = FileList[ '[a-zA-Z]*', 'generators/**/*', 'lib/**/*', 'rails/**/*', 'tasks/**/*', 'test/**/*' ]
-
-spec = Gem::Specification.new do |s| 
-  s.name = "active_device"
-  s.version = "1.1.0"
-  s.authors = ["Shenouda Bertel"]
-  s.description = "Device UserAgent Detector"
-  s.email = "sbertel@mobithought.com"
-  s.homepage = "http://mobithought.com/"
-  s.files = PKG_FILES.to_a
-  s.require_paths = ["lib"]
-  s.rubyforge_project = "active_device"
-  s.rubygems_version = "1.3.5"
-  s.summary = "Mobile Device Detector"
-  s.platform = Gem::Platform::RUBY 
-  s.has_rdoc = false
-  s.extra_rdoc_files = ["README"]
-end
-
-desc 'Turn this plugin into a gem.'
-Rake::GemPackageTask.new(spec) do |pkg|
-  pkg.gem_spec = spec
-end

@@ -1,1 +1,2 @@
-require File.dirname(__FILE__) + "/rails/init.rb"
+require 'active_device'
+require 'active_device_helper'

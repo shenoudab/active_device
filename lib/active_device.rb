@@ -29,6 +29,7 @@ require 'active_device/bot'
 require 'active_device/engine'
 require 'active_device/browser'
 require 'active_device/os'
+require 'active_device_helper'
 
 module ActiveDevice
   
@@ -135,4 +136,5 @@ module ActiveDevice
 
 end
 
-ActionController::Base.send(:include, ActiveDevice)
+ActionController::Base.send :include, ActiveDevice
+ActionView::Base.send :include, ActiveDevice::Helper

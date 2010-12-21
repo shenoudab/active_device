@@ -29,9 +29,11 @@ require 'active_device/bot'
 require 'active_device/engine'
 require 'active_device/browser'
 require 'active_device/os'
-require 'active_device_helper'
+require 'active_device/helper'
 
 module ActiveDevice
+
+  include ActiveDevice::Helper
   
   def self.included(base)
     base.before_filter :set_mobile_format

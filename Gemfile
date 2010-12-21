@@ -1,8 +1,4 @@
-source 'http://rubygems.org'
+source "http://rubygems.org"
 
-gem 'rails'
-
-group :test do
-  gem 'webrat', :require => false
-  gem 'mocha', :require => false
-end
+# Specify your gem's dependencies in active_device.gemspec
+gemspec

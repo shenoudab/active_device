@@ -21,15 +21,6 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #++
 
-require 'active_device/user_agent'
-require 'active_device/brand'
-require 'active_device/model'
-require 'active_device/handset'
-require 'active_device/bot'
-require 'active_device/engine'
-require 'active_device/browser'
-require 'active_device/os'
-
 module ActiveDevice
 
   module Helper

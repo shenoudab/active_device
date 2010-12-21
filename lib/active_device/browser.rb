@@ -30,6 +30,7 @@ class Browser
     when /Arora/i                ; :Arora
     when /Avant/i                ; :Avant
     when /Beonex/i               ; :Beonex
+    when /BlackBerry/i           ; :BlackBerry
     when /Bloglines/i            ; :Bloglines # Feed Reader
     when /BonEcho/i              ; :BonEcho
     when /Camino/i               ; :Camino
@@ -140,6 +141,7 @@ class Browser
     when /Shiira/i               ; :Shiira
     when /Shiretoko/i            ; :Shiretoko
     when /SiteBar/i              ; :SiteBar #Link Checker
+    when /Skyfire/i              ; :Skyfire
     when /Sleipnir/i             ; :Sleipnir
     when /Stainless/i            ; :Stainless
     when /Sunrise/i              ; :Sunrise
@@ -148,12 +150,13 @@ class Browser
     when /Symbian/i              ; :Symbian #Embedded Mobile Based
     when /TeaShark/i             ; :TeaShark
     when /Thunderbird/i          ; :Thunderbird # E-Mail Client
+    when /UCWEB/i                ; :UCWEB
     when /uzbl/i                 ; :Uzbl
     when /Vivante Link Checker/i ; :'Vivante Link Checker' # Link Checker
     when /w3m/i                  ; :w3m
-    when /W3C-checklink/i        ; :'W3C-checklink' # Link Checker
-    when /W3C_CSS_Validator_JFouffa/i ; :W3C_CSS_Validator_JFouffa # Validator
-    when /W3C_Validator/i        ; :W3C_Validator # Validator
+    #when /W3C-checklink/i        ; :'W3C-checklink' # Link Checker
+    #when /W3C_CSS_Validator_JFouffa/i ; :W3C_CSS_Validator_JFouffa # Validator
+    #when /W3C_Validator/i        ; :W3C_Validator # Validator
     when /WapTiger/i             ; :WapTiger #Embedded Mobile Based
     when /WDG_Validator/i        ; :WDG_Validator # Validator
     when /Web Downloader/i       ; :'Web Downloader' # Offline Browser
@@ -191,6 +194,7 @@ class Browser
       #    when :SymbianOS  ; $1 if user_agent =~ /\/([\d\w\.\-]+)/i #\)?\s*$
       #    when :Symbian    ; $1 if user_agent =~ /\ ([0-9\d\w\.\-]+)\)?\s*$/i
       #    when :iPhone     ; $1 if user_agent =~ /([\d\w\.\-]+)\)?\s*$/i
+    when :iPhone     ; $1 if user_agent =~ /#{name.to_s} OS ([0-9\-\.\_]+)/i
       #when name[/safari([0-9\-\.\_]+)/i] ; $1 if name =~ /([0-9\-\.\_]+)/i
     else           $1 if user_agent =~ /#{name.to_s}[\/ ]([\d\w\.\-]+)/i
     end

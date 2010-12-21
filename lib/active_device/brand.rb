@@ -24,7 +24,7 @@ class Brand
     when /iTouch/i             ; :Apple
     when /iPad/i               ; :Apple
     when /iPod/i               ; :Apple
-      ## ==================================== ##
+    ## ==================================== ##
     when /Acer/i               ; :Acer
     when /Ahong/i              ; :Ahong
     when /Aiko/i               ; :Aiko
@@ -44,7 +44,7 @@ class Brand
     when /Benefon/i            ; :Benefon
     when /BenQ/i               ; :BenQ
     when /BenQ-Siemens/i       ; :'BenQ-Siemens'
-      #when /Bird/                ; :Bird
+    #when /Bird/                ; :Bird
     when /Bleu/i               ; :Bleu
     when /BlackBerry/i         ; :BlackBerry
     when /Capitel/i            ; :Capitel
@@ -128,7 +128,7 @@ class Brand
     when /LG/i                 ; :LG
     when /Lobster/i            ; :Lobster
     when /Longcos/i            ; :Longcos
-      #when /LT/                  ; :LT
+    #when /LT/                  ; :LT
     when /LXE/i                ; :LXE
     when /Malata/i             ; :Malata
     when /Maxon/i              ; :Maxon
@@ -152,7 +152,7 @@ class Brand
     when /Neonode/i            ; :Neonode
     when /Newgen/i             ; :Newgen
     when /Nexian/i             ; :Nexian
-      #when /Nintendo/i           ; :Nintendo
+    #when /Nintendo/i           ; :Nintendo
     when /Nokia/i              ; :Nokia
     when /NTT DoCoMo/i         ; :'NTT DoCoMo'
     when /O2/                  ; :O2
@@ -160,7 +160,7 @@ class Brand
     when /Onda/i               ; :Onda
     when /Opera Mini/i         ; :Opera
     when /Opera Mobi/i         ; :Opera
-      #when /Opera/i              ; :Opera
+    #when /Opera/i              ; :Opera
     when /Optimay/i            ; :Optimay
     when /Orange/i             ; :Orange
     when /PalmOne/i            ; :PalmOne
@@ -226,7 +226,7 @@ class Brand
     when /VK/i                 ; :VK
     when /Vodafone/i           ; :Vodafone
     when /Voxtel/i             ; :Voxtel
-    when /W3C/i                ; :W3C
+    #when /W3C/i                ; :W3C
     when /webOS/i              ; :Palm
     when /WellcoM/i            ; :WellcoM
     when /Wonu/i               ; :Wonu
